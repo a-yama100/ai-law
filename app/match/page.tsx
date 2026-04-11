@@ -48,7 +48,7 @@ export default function MatchPage() {
                     <button
                       key={issue.id}
                       onClick={() => toggleIssue(issue.id)}
-                      className={"w-full text-left px-3 py-2 rounded-lg text-sm font-medium transition-all " + (selected.includes(issue.id)
+                      className={"w-full text-left px-3 py-2 rounded-lg text-sm font-medium transition-all cursor-pointer " + (selected.includes(issue.id)
                         ? "bg-indigo-500 text-white shadow-md"
                         : "bg-gray-50 text-gray-700 hover:bg-gray-100")}
                     >
@@ -68,7 +68,7 @@ export default function MatchPage() {
         <button
           onClick={() => setShowResults(true)}
           disabled={selected.length === 0}
-          className="mt-4 bg-indigo-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-indigo-600 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+          className="mt-4 bg-indigo-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-indigo-600 transition-colors cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
         >
           Find Matching Lawyers
         </button>
