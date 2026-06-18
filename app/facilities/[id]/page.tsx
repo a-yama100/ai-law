@@ -15,7 +15,7 @@ export default async function FacilityDetailPage({ params }: { params: Promise<{
         <div className="bg-gradient-to-r from-indigo-500 to-indigo-700 p-8 text-white">
           <h1 className="text-3xl font-bold mb-2">{facility.name}</h1>
           <p className="text-white/80 text-lg">{facility.city}, {facility.region}</p>
-          <div className="flex items-center gap-6 mt-4">
+          <div className="flex flex-wrap items-center gap-6 mt-4">
             <div>
               <div className="text-4xl font-bold">{facility.rating}</div>
               <div className="text-white/70 text-sm">{(facility.reviewCount ?? 0).toLocaleString()} reviews</div>
@@ -33,7 +33,7 @@ export default async function FacilityDetailPage({ params }: { params: Promise<{
         <div className="p-6">
           <p className="text-gray-600 mb-6">{facility.description}</p>
           <h2 className="text-xl font-bold text-gray-900 mb-4">Available Services</h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
             {facility.equipment.map(e => (
               <div key={e} className="flex items-center gap-2 text-sm text-gray-700 bg-gray-50 rounded-lg p-3">
                 <svg className="w-4 h-4 text-indigo-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">

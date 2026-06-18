@@ -57,7 +57,7 @@ export default function Home() {
               Browse AI Lawyers
             </Link>
           </div>
-          <div className="mt-12 grid grid-cols-3 gap-8 max-w-lg mx-auto">
+          <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-lg mx-auto">
             <div>
               <div className="text-3xl font-bold">{AI_PROVIDERS.length}</div>
               <div className="text-indigo-200 text-sm">AI Services</div>

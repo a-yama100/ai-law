@@ -100,7 +100,7 @@ export default function MatchPage() {
                     </div>
                   </div>
                   <div className="p-4">
-                    <div className="flex items-center gap-4 text-sm text-gray-600 mb-2">
+                    <div className="flex flex-wrap items-center gap-4 text-sm text-gray-600 mb-2">
                       <span>Rating: {p.rating}</span>
                       <span>{p.reviewCount.toLocaleString()} reviews</span>
                       <span>{p.priceRange}</span>
@@ -129,7 +129,7 @@ export default function MatchPage() {
                   </div>
                   <span className="bg-gray-100 text-gray-600 text-xs px-2 py-1 rounded-full">{f.type}</span>
                 </div>
-                <div className="flex items-center gap-4 text-sm text-gray-600 mb-2">
+                <div className="flex flex-wrap items-center gap-4 text-sm text-gray-600 mb-2">
                   <span>Rating: {f.rating}</span>
                   <span>{f.priceRange}</span>
                   <span>{f.openHours}</span>

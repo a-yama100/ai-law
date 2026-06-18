@@ -14,7 +14,7 @@ export default async function ProviderDetailPage({ params }: { params: Promise<{
       <div className={"bg-gradient-to-r " + provider.gradient + " rounded-xl p-8 text-white mb-8"}>
         <h1 className="text-3xl font-bold mb-2">{provider.name}</h1>
         <p className="text-white/80 text-lg">{provider.country}</p>
-        <div className="flex items-center gap-6 mt-4">
+        <div className="flex flex-wrap items-center gap-6 mt-4">
           <div>
             <div className="text-4xl font-bold">{provider.rating}</div>
             <div className="text-white/70 text-sm">{(provider.reviewCount ?? 0).toLocaleString()} reviews</div>
@@ -68,7 +68,7 @@ export default async function ProviderDetailPage({ params }: { params: Promise<{
       </div>
       <div className="bg-white rounded-xl shadow-lg p-6">
         <h2 className="text-xl font-bold text-gray-900 mb-4">Features</h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
           {provider.features.map(f => (
             <div key={f} className="flex items-center gap-2 text-sm text-gray-700">
               <svg className="w-4 h-4 text-indigo-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">

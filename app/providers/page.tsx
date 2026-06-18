@@ -22,7 +22,7 @@ export default function ProvidersPage() {
             </div>
             <div className="p-6">
               <p className="text-gray-600 mb-4">{p.description}</p>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mb-4">
                 <div>
                   <div className="text-xs text-gray-500">Monthly Fee</div>
                   <div className="font-bold text-gray-900">PHP {(p.monthlyFee ?? 0).toLocaleString()}</div>

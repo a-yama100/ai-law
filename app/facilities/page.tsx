@@ -31,7 +31,7 @@ export default function FacilitiesPage() {
                 </span>
               </div>
               <p className="text-gray-600 text-sm mb-4">{f.description}</p>
-              <div className="flex items-center gap-4 text-sm text-gray-600 mb-3">
+              <div className="flex flex-wrap items-center gap-4 text-sm text-gray-600 mb-3">
                 <span>Rating: {f.rating}</span>
                 <span>{(f.reviewCount ?? 0).toLocaleString()} reviews</span>
                 <span>{f.priceRange}</span>
