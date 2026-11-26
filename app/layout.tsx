@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
   openGraph: {
     type: 'website',
-    locale: 'ja_JP',
+    locale: 'en_US',
     url: 'https://ai-law.phaiworks.com/',
     siteName: 'AI Legal Guide',
     title: 'AI Legal Guide - Future Legal Services Simulation',
@@ -40,7 +40,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="ja">
+    <html lang="en">
       <body className={geistSans.variable + ' ' + geistMono.variable + ' antialiased min-h-screen flex flex-col'}>
         <Navbar />
         <main className="flex-1">{children}</main>

@@ -15,11 +15,12 @@ export function Footer() {
             <Link href="/terms" className="hover:text-white transition-colors">Terms</Link>
             <Link href="/privacy" className="hover:text-white transition-colors">Privacy</Link>
             <Link href="/about" className="hover:text-white transition-colors">About</Link>
+            <a href="https://www.phaiworks.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">PH AI Works</a>
           </div>
           <div className="border-t border-gray-700 w-full pt-6 mt-2">
             <div className="text-center text-sm">
               <p className="text-amber-400 mb-2">This is a simulation site. All provider and facility data is fictional.</p>
-              <p className="text-gray-500">Copyright {currentYear} AI Legal Guide. All rights reserved.</p>
+              <p className="text-gray-500">&copy; {currentYear} AI Legal Guide. All rights reserved.</p>
             </div>
           </div>
         </div>

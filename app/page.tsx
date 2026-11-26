@@ -4,7 +4,7 @@ const FEATURES = [
   {
     icon: "M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z",
     title: "Legal Issue Matching",
-    desc: "Describe your legal problem and AI will recommend the best AI lawyer service and nearby facility.",
+    desc: "Select your legal issues to see which AI lawyer services and nearby facilities fit best.",
     href: "/match",
     gradient: "from-indigo-500 to-indigo-700",
   },
@@ -101,7 +101,7 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">How It Works</h2>
           <div className="grid md:grid-cols-3 gap-8">
             {[
-              { step: "1", title: "Describe Your Issue", desc: "Enter your legal problem and preferences. The AI assistant will analyze your situation." },
+              { step: "1", title: "Select Your Issues", desc: "Choose your legal issues from the list. The site finds the areas of law that match." },
               { step: "2", title: "Get Matched", desc: "Receive personalized recommendations for AI lawyer services and nearby legal facilities." },
               { step: "3", title: "Connect", desc: "Start a consultation with your chosen AI lawyer and book services at a local facility." },
             ].map((item) => (

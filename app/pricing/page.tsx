@@ -21,7 +21,7 @@ export default function PricingPage() {
               </tr>
             </thead>
             <tbody>
-              {AI_PROVIDERS.sort((a, b) => a.monthlyFee - b.monthlyFee).map((p, idx) => (
+              {[...AI_PROVIDERS].sort((a, b) => a.monthlyFee - b.monthlyFee).map((p, idx) => (
                 <tr key={p.id} className={idx % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
                   <td className="p-4">
                     <div className="font-bold text-gray-900">{p.name}</div>
