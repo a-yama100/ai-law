@@ -44,6 +44,8 @@ export default function Home() {
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
             AI Legal Guide
           </h1>
+          {/* eslint-disable-next-line @next/next/no-img-element -- 同じ origin の静的ファイル。next/image の最適化は使わない */}
+          <img src="/media/hero.webp" alt="A business owner consults an AI lawyer in an unmanned legal booth in Makati" width={1600} height={679} className="mb-8 aspect-[1600/679] w-full rounded-xl object-cover shadow-lg" />
           <p className="text-xl text-indigo-100 max-w-2xl mx-auto mb-8">
             Experience the future where AI lawyers replace all human attorneys.
             <br />
