@@ -1,7 +1,9 @@
 'use client'
 import { useState, useEffect } from 'react'
+import { TEXT } from '@/lib/content'
+import type { Lang } from '@/lib/i18n'
 
-export function ScrollToTop() {
+export function ScrollToTop({ lang }: { lang: Lang }) {
   const [show, setShow] = useState(false)
 
   useEffect(() => {
@@ -16,7 +18,7 @@ export function ScrollToTop() {
     <button
       onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
       className="fixed bottom-6 right-6 bg-teal-500 text-white p-3 rounded-full shadow-lg hover:bg-teal-600 transition-colors cursor-pointer z-50"
-      aria-label="Back to top"
+      aria-label={TEXT[lang].common.backToTop}
     >
       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
